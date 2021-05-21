@@ -51,7 +51,7 @@ options = {
 
     // Optional. A value of false (default) limits selection to a single file, while
     // true enables multiple file selection.
-    multiselect: false, // or true
+    multiselect: true, // or true
 
     // Optional. This is a list of file extensions. If specified, the user will
     // only be able to select files with these extensions. You may also specify
@@ -68,7 +68,7 @@ options = {
     // If specified, the user will only be able to select files with size
     // less than or equal to this limit.
     // For the purposes of this option, folders have size zero.
-    sizeLimit: 1024, // or any positive number
+    sizeLimit: 1000000000, // or any positive number
 };
 
 var button = Dropbox.createChooseButton(options);
